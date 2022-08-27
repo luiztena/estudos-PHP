@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilo2.css">
+    <style>
+        @font-face {
+  font-family: 'bouncy';
+  src: url('../CSS/fontes/bouncy.otf');}
+
+  @font-face {
+  font-family: 'bluebarry';
+  src: url('../CSS/fontes/bluebarry.ttf');
+}
+        body {
+            background-image: url("../Imagens/background1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+        }
+
+        label{
+            color: lightgreen;
+            text-shadow: 3px 3px 2px  black;
+            font-family: 'bluebarry';
+            letter-spacing: 2px;
+
+        }
+        label:hover{
+            cursor: pointer;
+        }
+        label#pergunta, label#label-casado, label#label-solteiro{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            font-weight: bold;
+            text-shadow: 3px 3px 3px black;
+            cursor: pointer;
+            color: lightgreen;
+        }
+        h1{
+            font-family: 'bouncy';
+            color: black;
+            text-shadow: 1px 2px black;
+            font-weight: 500;
+            font-size: 40pt;
+        }
+
+        input#casado-id{
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+        }
+        
+        input#solteiro-id{
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+        }
+
+        input#submit{
+            width: 70px;
+            height: 60px;
+            border: 2px black solid;
+            border-radius: 100%;
+            text-transform: uppercase; 
+        }
+
+        input#submit:hover{
+            background-color: lightsalmon;
+            font-weight: bolder;
+            box-shadow: 2px 1px 3px black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Variaveis</h1>
+    </header>
+    <form action="../PHP/variaveis.php">
+
+        <label for="nome-id">Nome</label>
+            <input type="text" required name="nome" id="nome-id">
+
+        <label for="idade-id">Idade</label>
+            <input type="number" name="idade" required id="idade-id">
+
+        <label for="peso-id">Peso</label>
+            <input step="0.010" required type="number" name="peso" id="peso-id">
+
+        <br><br><br> <label id="pergunta">Você é casado(a)?</label>
+
+        <label id="label-casado" for="casado-id">Sim</label>
+            <input type="radio" value="True" name="casado" id="casado-id">
+
+        <label id="label-casado"  for="solteiro-id">Não</label>
+            <input checked type="radio" value="False" name="casado" id="solteiro-id">
+<br><br>
+            <input id="submit" type="submit" value="Enviar">
+    </form>
+    <script>
+        //INPUT 1//
+        document.getElementById("peso-id").addEventListener("change", function(){
+       this.value = parseFloat(this.value).toFixed(2);
+    });
+    
+    document.getElementById("peso-id").addEventListener("change", function(){
+       this.value = parseFloat(this.value).toFixed(2);
+    });
+    </script>
+</body>
+</html>

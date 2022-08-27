@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formluario</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+<body>
+    <header>
+       <h1>Formulario</h1>
+       <h2>Preencha as informações</h2> 
+    </header>
+    <form style="border: 3px black solid; background-color:white;" action="../PHP/formulario.php">
+        <div>
+        <legend style= "font-size:35pt; text-transform:uppercase; font-family:Arial;margin-top:30px; margin-bottom:60pt;"
+         id="form-inicio">Formulario integrado com PHP</legend>
+
+        <label style="color:black; font-size:16pt; font-weight:bold;
+        font-family:Arial; text-transform:uppercase;"
+        for="id-nome">Nome: <input style="margin-right:60px;" type="text" name="v-nome" id="id-nome">
+        </input></label>
+
+        <label  style="color:black; font-size:16pt; font-weight:bold;
+        font-family:Arial; text-transform:uppercase;" for="id-sobrenome">
+        Sobrenome: <input type="text" name="v-sobrenome" id="id-sobrenome"> </input></label>
+<br><br>
+        <label style="color:black; padding-right:53pt; font-size:14pt; font-weight:bold;
+        font-family:Arial; text-transform:uppercase; ">Ano de Nascimento: <input  type="number" name="v-data"
+        id="id-data"></label>
+
+        <label style="color:black; font-size:14pt; font-weight:bold;
+        font-family:Arial; text-transform:uppercase;" for="">Sexo: </label>
+
+        <label for="id-masc"> <input checked type="radio" value="Masculino" name="v-sexo" id="id-masc"> Masculino</label>
+
+        <label for="id-fem">  <input value="Feminino" type="radio" name="v-sexo" id="id-fem">Feminino</label>
+
+    </label>
+<br><br>
+        <input style="margin-top:80px; margin-bottom:20px; width:100px; height:30px; text-transform:uppercase;" type="submit" value="Enviar"></input>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="../CSS/estilo2.css">
+    <style>
+        @font-face{
+            font-family: 'giz';
+            src: url(../CSS/fontes/catalish.otf);
+        }
+        body{
+            background-color: rgb(9, 54, 9);
+        }
+        div#quadro{
+            background-image: url("../imagens/background2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            padding-top: 30px;
+            height: 300px;
+        }
+        h2{
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+
+        label{
+            color: white;
+            font-family: 'giz';
+            font-size: 20pt;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            user-select: none;
+        }
+
+        input#submit{
+            background-color: rgb(34, 29, 29);
+            color: white;
+            border: none;
+            font-family: 'giz';
+            font-size: 30pt;
+            cursor: pointer;
+        }
+
+        input#submit:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Média</h1<br><br>
+        <h2>Digite suas notas e veja se você passou, ficou de recuperação ou reprovou.</h2>
+        <h2>Média: acima de 7 aprovado / acima de 3 recuperação/ abaixo de 4 reprovado</h2>
+</header> 
+<div id="quadro">
+<form action="../PHP/media.php" method="get">    
+    <label for="nota1-id">Nota 1 :</label> <input required type="number" min="0" max="10" name="nota1" id="nota1-id">
+    <label for="nota2-id">Nota 2 : </label> <input required type="number" min="0" max="10" name="nota2" id="nota2-id"><br><br>
+    <input id="submit" type="submit" value="Enviar">
+</div>
+</form>
+</body>
+</html>

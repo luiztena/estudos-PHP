@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilo2.css">
+    <style>
+
+        body{
+            background-color: rgb(27, 44, 44);
+        }
+
+        form#porcentagem{
+            background-color: aliceblue;
+            display: inline-block;
+            margin-left: 20%;
+            height: 300px;
+            border-left: red outset 7px;
+            border-bottom: black solid 3px;
+            border-top: black solid 3px;
+            border-right: black inset 7px;
+            text-align: justify;
+            width: 800px;
+        }
+
+        input#confirmar{
+            margin-left: 44%;
+            margin-top: 10%;
+            font-weight: 700;
+        }
+        label{
+            margin-left: 20px;
+          
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Porcentagem</h1>
+    </header>
+    <form id="porcentagem" action="../PHP/porcentagem.php" method="get"><br>
+    <label for="valor-id">Digite o valor do produto: </label>
+    <input type="number" name="valor" id="valor-id"><br><br>
+    <label for="desc-id">Digite o valor do desconto que será aplicado: </label>
+    <input min="0" max="100" type="number" name="desc" id="desc-id"><br><br>
+    <label for="acr-id">Digite o valor do acrecimo que será aplicado: </label>
+    <input min="0" type="number" name="acr" id="acr-id">
+    <br><input id="confirmar" type="submit" value="Confirmar">
+    </form>
+</body>
+</html>

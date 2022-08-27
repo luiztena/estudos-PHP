@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilo2.css">
+    <style>
+         body{
+            background-image: url('../Imagens/background3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+         }
+         main{
+            background-color: rgb(15, 27, 27);
+            padding-top: 30px;
+            padding-bottom: 60px;
+            display: inline-block;
+            margin-left: 30%;
+            margin-top: 40px;
+            width: 500px;
+            border: 6px double white;
+         }
+         label{
+            color: azure;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         }
+
+    </style>
+</head>
+<body>
+   <main>
+    <header>
+    <h1>Calculadora</h1>
+    <h2 style="color:white; text-shadow:2px 2px black;">Digite os valores</h2>
+    </header>
+    <form action="../PHP/operadores.php" method="get">
+    <input step="0.010" type="number"  name="numero" id="numero-id1" style="width:100px; border: 2px solid black; height:27px;" >
+    <label> +</label>
+    <input type="number" step="0.010"  name="numero2" id="numero-id2" style="width:100px; border: 2px solid black; height:27px;">
+    <input type="submit" value="Calcular" style="font-weight: bold; text-transform: uppercase; margin-left: 20px;">
+    </form>
+   </main>
+<script>
+    //INPUT 1//
+    document.getElementById("numero-id1").addEventListener("change", function(){
+   this.value = parseFloat(this.value).toFixed(2);
+});
+
+document.getElementById("numero-id1").addEventListener("change", function(){
+   this.value = parseFloat(this.value).toFixed(2);
+});
+//INPUT 2//
+document.getElementById("numero-id2").addEventListener("change", function(){
+   this.value = parseFloat(this.value).toFixed(2);
+});
+
+document.getElementById("numero-id2").addEventListener("change", function(){
+   this.value = parseFloat(this.value).toFixed(2);
+});
+</script>
+</body>
+</html>

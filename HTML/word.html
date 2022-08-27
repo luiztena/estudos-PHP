@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/word.css">
+</head>
+<body>
+    <header>
+    <h1>Personalizador de texto</h1>
+    <form action="../PHP/word.php">
+        <label id="titulo" for="word">Digite seu comentario:<br><br>
+            <textarea name="word" id="textarea-id" cols="30" rows="10"></textarea>
+        </label><br><br>
+        <label for="color-id">Cor da fonte: 
+        <input name="cor" id="color-id" type="color"></input>
+        </label>
+
+        <label for="tamanho-id">Tamanho da fonte
+            <select style="width: 60px;" name="tamanho" id="tamanho-id">
+                <option value="10pt">10</option>
+                <option value="12pt">12</option>
+                <option value="14pt">14</option>
+                <option value="16pt" selected>16</option>
+                <option value="18pt">18</option>
+                <option value="20pt">20</option>
+            </select>
+        </label>
+    
+        <label for="fonte-id">Estilo da fonte
+            <select style="width: 80px;" name="fonte" id="tamanho-id">
+                <option value="arial"selected>Arial</option>
+                <option value="times-new-roman">Times new Roman</option>
+                <option value="courier-new">Courier New</option>
+                <option value="impact">Impact</option>
+            </select>
+        </label>
+        <label for="tipo-id">Estilo do texto
+            <select style="width: 100px;" name="tipo" id="tamanho-id">
+                <option value="capitalize">Padrão</option>
+                <option value="uppercase">Maiusculo</option>
+                <option value="lowercase">Minusculo</option>
+            </select>
+        </label>
+ <br><Br>
+        <input type="submit" value="Personalizar">
+
+
+
+    </form>
+    </header>
+</body>
+</html>

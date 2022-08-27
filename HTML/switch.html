@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores 2</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <style>
+        body{
+            background-color: rgb(68, 68, 68);
+        }
+        form{
+            background-color: white;
+            display: inline-block;
+            margin-left: 23%;
+            width: 800px;
+            border: 8px solid rgb(31, 5, 31);
+            margin-top: 15%;
+            border-left: 8px solid purple;
+            border-right: 8px solid purple;
+        }
+        label{
+            color:black;
+            font-size: 16pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        fieldset{
+            margin-left: 5%;
+        }
+        input{
+            background-color: black;
+            color: white;
+            border: 4px double white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        input::placeholder{
+            color: white;
+    
+        }
+        input:hover::placeholder{
+            color: springgreen;
+        }
+        fieldset{
+            margin-bottom: 3%;
+        }
+
+        input#enviar{
+            margin-left: 40%;
+            margin-bottom: 3%;
+        }
+        input#enviar:hover{
+            border: black 4px double;
+            cursor: pointer;
+            background-color: rgba(0, 255, 42, 0.815);
+            color: black;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="../PHP/switch.php">
+            <label for="num">Digite um valor:
+                <input type="number" required placeholder="Digite aqui" name="valor" id="num"></label>
+                <fieldset>
+                 
+                    <label for="dobro">Dobro</label>
+                    <input type="radio" value="1" name="op" checked id="dobro">
+                    <label for="quadrado">Quadrado</label>
+                    <input type="radio" value="2" name="op" id="quadrado">
+                    <label for="cubo">Cubo</label>
+                    <input type="radio" value="3" name="op" id="cubo">
+                    <label for="raiz">Raiz</label>
+                    <input type="radio" value="4" name="op" id="raiz">
+           
+        </fieldset>
+        <input id="enviar" type="submit" value="Calcular">
+    </form>
+</body>
+</html>

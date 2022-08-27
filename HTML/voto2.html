@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voto 2</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <style>
+        label{
+            font-family: Arial;
+            font-size: 18pt;
+            color: whitesmoke;
+            text-shadow: 2px 1px black;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Veja se você pode votar</h2>
+    </header>
+    <div>
+    <form method="get" action="../PHP/voto2.php">
+        <label for="ano">Ano de nascimento: </label>
+        <input type="number" required name="idade" id="ano">
+        <input style="font-weight: bolder;" type="submit" value="Enviar">
+    </form>
+    
+</div>
+</body>
+</html>
