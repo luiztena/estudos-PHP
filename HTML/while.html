@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador 2.0</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <style>
+        body{
+            background-color: darkblue;
+        }
+        div{
+            background-color: rgb(151, 150, 150);
+            display: inline-block;
+            text-align: justify;
+            border: 3px rgb(0, 0, 0) solid;
+            border-radius: 25%;
+            height: 120px;
+            padding-top: 30px;
+            padding-left: 10px;
+            margin-left: 42%;
+            font-weight: bold;
+            width:200px;
+        }
+        label{
+            font-size: 15pt;
+            font-family: sans-serif;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+        label#final{
+            margin-right:7px ;
+        }
+        input#submit{
+            background-color: antiquewhite;
+            border-radius: 40%;
+            margin-left: 30%;
+            margin-top: 8px;
+            height: 30px;
+            text-transform: uppercase;
+        }
+        input#submit:hover{
+            font-weight: bold;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h2 style="text-transform:uppercase; font-family:sans-serif; letter-spacing: 2px;">Contador 2.0</h2>
+    </header>
+    <div>
+    <form action="../PHP/while.php">
+    <label for="inicio-id">Inicio:</label>
+    <input type="number" name="inicio" id="inicio-id" min="-100" max="100"><br>
+    <label id="final" for="final-id">Final:</label>
+    <input type="number" name="final" id="final-id" min="-100" max="100"><br>
+    <label for="incremento-id">Incremento:</label>
+    <input type="number" name="incremento" id="incremento-id" min="1" max="10"><br>
+    <input id="submit" type="submit" value="Enviar">
+    </form>
+</div>
+</body>
+</html>

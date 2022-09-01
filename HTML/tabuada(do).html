@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilo2.css">
+    <style>
+
+        body{
+            background-color: rgb(27, 44, 44);
+        }
+
+        form#multiplicar{
+            background-color: aliceblue;
+            display: inline-block;
+            margin-left: 20%;
+            height: 300px;
+            border-left: red outset 7px;
+            border-bottom: black solid 3px;
+            border-top: black solid 3px;
+            border-right: black inset 7px;
+            text-align: justify;
+            width: 800px;
+        }
+
+        input#confirmar{
+            margin-left: 44%;
+            margin-top: 10%;
+            font-weight: 700;
+        }
+        label{
+            margin-left: 20px;
+          
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Tabuada</h1>
+    <h1 style="color: red;">DO-WHILE</h1>
+    </header>
+    <form id="multiplicar" action="../PHP/exercicios/tabuada(do).php" method="get"><br>
+    <label for="valor-id">Digite o valor: </label>
+    <input min="1" max="10" required type="number" name="valor" id="valor-id"><br><br>
+    <br><input id="confirmar" type="submit" value="Calcular">
+    </form>
+</body>
+</html>

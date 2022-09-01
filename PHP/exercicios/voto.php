@@ -11,7 +11,7 @@
     <header>
     <h1>Eleições</h1>
     <h2>Veja se você é obrigado a votar</h2>
-    ></header>
+    </header>
     <div>
         <?php
         $idade = $_GET["a"];
