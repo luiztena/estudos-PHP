@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contador</title>
-    <link rel="stylesheet" href="../../CSS/estilo.css">
+    <link rel="stylesheet" href="../../../CSS/estilo.css">
     <style>
         body{
             background-color:rgb(30,30,150,0.7);

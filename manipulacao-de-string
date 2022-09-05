@@ -1,0 +1,16 @@
+STRINGS NUMERICAS (NUMBER)
+-------------------------------------------------------------------------------------
+abs () -> Valor absoluto
+intval(3.9) -> Valor inteiro  -> 3
+number_format($x,2,',','.') -> formatação de numero -> X.XXX,XX
+pow($base,$expoente) -> Potenciação
+round() -> arredondamento (para o inteiro mais proximo) ex:4,2 -> 4 | 4,8 -> 5
+sqrt(X) -> raiz quadrada -> [Raiz de X]
+-------------------------------------------------------------------------------------
+STRINGS (TEXT)
+printf -> mostra um texto na tela so que usando o printf ao inves do echo 
+    %s -> string -> texto
+    %d -> decimal -> positivo e negativo
+    %f -> float -> valor real
+    %u -> transformar a variavel em positivo
+print_r -> mostra detalhes de uma variavel
