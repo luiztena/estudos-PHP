@@ -1,16 +1,64 @@
-STRINGS NUMERICAS (NUMBER)
+STRINGS NUMERICOS
 -------------------------------------------------------------------------------------
 abs () -> Valor absoluto
+
 intval(3.9) -> Valor inteiro  -> 3
+
 number_format($x,2,',','.') -> formatação de numero -> X.XXX,XX
+
 pow($base,$expoente) -> Potenciação
+
 round() -> arredondamento (para o inteiro mais proximo) ex:4,2 -> 4 | 4,8 -> 5
+
 sqrt(X) -> raiz quadrada -> [Raiz de X]
 -------------------------------------------------------------------------------------
-STRINGS (TEXT)
-printf -> mostra um texto na tela so que usando o printf ao inves do echo 
+STRINGS DE TEXTO
+
+printf -> Mostra um texto na tela so que usando o printf ao inves do echo 
     %s -> string -> texto
     %d -> decimal -> positivo e negativo
     %f -> float -> valor real
     %u -> transformar a variavel em positivo
-print_r -> mostra detalhes de uma variavel
+
+print_r -> Mostra detalhes de uma variavel(array, vetores)
+        -> Ver também: var_dump e var_export
+
+wordwrap -> Cria quebras de linha ou divisões em uma string em um tamanho especificado.
+
+strlen ->  Permite verificar o tamanho de uma string, contando seus caracteres (inclusive espaços em branco).
+
+trim -> Elimina espaços em branco antes e depois de uma string.
+
+str_word_count -> Conta quantas palavras uma string possui.
+
+explode -> Quebra uma string e coloca os itens em um vetor.
+
+str_split -> Coloca cada letra de uma string em uma posição de um vetor.
+
+implode -> Transforma um vetor inteiro em uma string.
+
+chr -> Retorna um caractere de acordo com seu código ASCII passado como parâmetro.
+
+ord -> Retorna o código ASCII de um caractere passado como parâmetro.
+
+stringtolower -> Deixa a string toda em minusculo.
+
+stringtoupper -> Deixa a string toda em maiusculo.
+
+ucfirst -> Deixa a primeira letra da string em maiusculo.
+
+strpos -> Localiza uma palavra.
+    stripos -> Localiza uma palavra sendo ela maiuscula ou minuscula.
+
+substr_count -> Conta quantas vezes uma palavra apareceu em uma string.
+
+substr -> Seleciona uma parte de uma string.
+
+str_pad -> o culpa um numero selecionado de espaços em uma variavel
+
+str_repeat -> Repete uma variavel um determinado numero de vezes
+
+str_repleace -> Substitui uma palavra de uma string por outra
+    str_irepleace -> Substitui uma palavra de uma string por outra sendo ela minuscula ou maiuscula.
+
+count -> conta quantas variaveis existem em um vetor.
