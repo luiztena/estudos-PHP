@@ -51,15 +51,15 @@
     $m = array(
         
         "Nomes" => array("Claudia","Paulo","Manoel","Teresa","Antonio"),
-        "Sobrenome" => array("Quiroz","Menezes","Lisboa","Aparecida", "Silva"),
-        "Idade" => array(22,11,33,77,25),
-        "E-mail" => array(
+        "Sobrenomes" => array("Quiroz","Menezes","Lisboa","Aparecida", "Silva"),
+        "Idades" => array(22,11,33,77,25),
+        "E-mails" => array(
                         "claudinhadobadalasom@gmail.com",
                         "Paulo@gmail.com",
                         "manuel_obrabo@gmail.com",
                         "donateresa@hotmail.com",
                         "Antonio@hotmail.com"),
-        "Senha" => array(
+        "Senhas" => array(
                         "claudinha123",
                         "paulo24325",
                         "seilamano",
